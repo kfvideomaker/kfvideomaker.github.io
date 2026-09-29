@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KF VÍDEOMAKER | Vídeos de eventos que contam a sua história</title>
+<meta name="description" content="Videomaker em Campo Grande, MS: casamentos, 15 anos, formaturas, aniversários, eventos corporativos e shows. Não fazemos só um vídeo, contamos a sua história.">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Hanken+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--panel:#121212;--line:#2a2a2a;--txt:#f5f5f5;--mut:#a8a8a8;--red:#e10600;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--txt);font:400 17px/1.6 'Hanken Grotesk',sans-serif}
+h1,h2,h3,.d{font-family:'Big Shoulders Display',sans-serif;font-weight:900;text-transform:uppercase;line-height:.95;margin:0}
+a{color:inherit;text-decoration:none}
+.r{color:var(--red)}
+.w{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:96px 0}
+h2{font-size:clamp(40px,7vw,76px);margin-bottom:28px}
+.btn{display:inline-block;background:var(--red);color:#fff;font:700 22px/1 'Big Shoulders Display',sans-serif;letter-spacing:1.5px;text-transform:uppercase;padding:18px 30px;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover,.btn:focus-visible{transform:translateY(-3px);box-shadow:0 10px 30px rgba(225,6,0,.45)}
+:focus-visible{outline:3px solid #fff;outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(5,5,5,.92);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:900 26px 'Big Shoulders Display',sans-serif;letter-spacing:2px}
+nav{display:flex;align-items:center;gap:26px}
+nav a.l{color:var(--mut);font-size:15px}nav a.l:hover{color:#fff}
+nav .btn{font-size:17px;padding:12px 20px}
+@media(max-width:720px){nav a.l{display:none}}
+.hero{min-height:88svh;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse 60% 55% at 78% 45%,rgba(225,6,0,.28),transparent 70%),#050505;padding:70px 0}
+.hero::before,.hero::after{content:"";position:absolute;left:0;right:0;height:42px;background:#000;z-index:1}
+.hero::before{top:0}.hero::after{bottom:0}
+.hero .w{position:relative;z-index:2}
+.rec{display:flex;gap:10px;align-items:center;font:600 14px 'Hanken Grotesk',sans-serif;letter-spacing:2px;color:var(--mut);margin-bottom:22px}
+.rec i{width:12px;height:12px;border-radius:50%;background:var(--red);animation:b 1.2s infinite}
+@keyframes b{50%{opacity:.15}}
+.hero h1{font-size:clamp(54px,11.5vw,150px);max-width:900px}
+.hero p{font-size:clamp(18px,2.4vw,24px);color:var(--mut);max-width:560px;margin:26px 0 34px}
+.hero p b{color:#fff}
+.sob{display:grid;gap:40px;grid-template-columns:1fr 1fr;align-items:center}
+@media(max-width:800px){.sob{grid-template-columns:1fr}}
+.sob p{color:var(--mut);font-size:19px;margin:0 0 18px}
+.quote{border-top:6px solid var(--red);padding-top:22px;font-size:clamp(34px,5vw,56px)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.ev{background:var(--panel);border:1px solid var(--line);padding:30px 24px;min-height:190px;transition:border-color .25s,background .25s,transform .25s}
+.ev:hover{border-color:var(--red);background:#1a0a09;transform:translateY(-4px)}
+.ev h3{font-size:34px;margin-bottom:10px}.ev p{margin:0;color:var(--mut);font-size:16px}
+.big{margin-top:40px;font:900 clamp(30px,5vw,54px)/1 'Big Shoulders Display',sans-serif;text-transform:uppercase}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.steps li{border-top:4px solid var(--red);padding-top:16px}
+.steps .n{font:900 72px/1 'Big Shoulders Display',sans-serif;color:var(--red)}
+.steps h3{font-size:30px;margin:6px 0 8px}.steps p{margin:0;color:var(--mut);font-size:16px}
+.tile{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#1c1c1c,#0a0a0a);border:1px solid var(--line);display:flex;align-items:flex-end;padding:18px;overflow:hidden;cursor:pointer}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,.8))}
+.tile span{position:relative;z-index:2;font:900 24px 'Big Shoulders Display',sans-serif;text-transform:uppercase}
+.tile .p{position:absolute;top:50%;left:50%;width:68px;height:68px;margin:-34px;border-radius:50%;background:var(--red);z-index:2;transition:transform .25s}
+.tile .p::after{content:"";position:absolute;left:27px;top:20px;border-left:20px solid #fff;border-top:14px solid transparent;border-bottom:14px solid transparent}
+.tile:hover .p{transform:scale(1.18)}.tile:hover{border-color:var(--red)}
+.st{color:var(--red);letter-spacing:4px;font-size:22px}
+.dep{background:var(--panel);border:1px solid var(--line);padding:26px}
+.dep p{margin:10px 0 14px}.dep small{color:var(--mut)}
+.fim{text-align:center;background:radial-gradient(ellipse 60% 70% at 50% 100%,rgba(225,6,0,.35),transparent 70%)}
+.fim h2{font-size:clamp(44px,9vw,110px);max-width:960px;margin:0 auto 34px}
+footer{border-top:1px solid var(--line);padding:40px 0 110px;color:var(--mut);font-size:15px}
+footer .w{display:flex;flex-wrap:wrap;gap:18px 34px;justify-content:space-between;align-items:center}
+footer nav{gap:22px;flex-wrap:wrap}footer a:hover{color:var(--red)}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;width:62px;height:62px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.5)}
+.wa::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25d366;animation:pl 1.9s infinite;z-index:-1}
+@keyframes pl{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.7);opacity:0}}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="w"><a class="logo" href="#topo"><span class="r">KF</span> VÍDEOMAKER</a><nav><a class="l" href="#sobre">Sobre</a><a class="l" href="#eventos">Eventos</a><a class="l" href="#portfolio">Portfólio</a><a class="btn wal" href="#">Orçamento</a></nav></div></header>
+
+<main id="topo">
+<!-- Para usar seu showreel: coloque um <video autoplay muted loop playsinline> como fundo desta seção -->
+<section class="hero"><div class="w">
+<div class="rec"><i></i>REC <span id="tc">00:00:00</span></div>
+<h1>Não fazemos só um vídeo. Contamos <span class="r">a sua história.</span></h1>
+<p><b>Cada detalhe vira cena.</b> Casamentos, 15 anos, formaturas, shows e eventos filmados para você reviver a emoção toda vez que apertar o play.</p>
+<a class="btn wal" href="#">Quero minha história em vídeo</a>
+</div></section>
+
+<section id="sobre"><div class="w sob rv">
+<div><h2>Seu momento só acontece <span class="r">uma vez</span></h2>
+<p>Um casamento, uma formatura, um show. Você vive tudo em algumas horas e depois só resta a memória. Nosso trabalho é transformar essas horas em um filme que faz você sentir tudo de novo.</p>
+<p>Chegamos antes, ficamos até o fim e prestamos atenção no que os outros não veem: o olhar, o abraço, a risada no canto da pista.</p></div>
+<div class="quote d">Emoção que você vai querer <span class="r">rever para sempre.</span></div>
+</div></section>
+
+<section id="eventos"><div class="w rv">
+<h2>Todo evento tem uma <span class="r">história única</span></h2>
+<div class="grid">
+<div class="ev"><h3>Casamentos</h3><p>O sim, o choro, a dança. Tudo na ordem em que você sentiu.</p></div>
+<div class="ev"><h3>15 anos</h3><p>A festa sonhada, em cada detalhe e em cada abraço.</p></div>
+<div class="ev"><h3>Aniversários</h3><p>Do parabéns ao último brinde, sem perder nenhum sorriso.</p></div>
+<div class="ev"><h3>Formaturas</h3><p>Anos de esforço em um único dia inesquecível.</p></div>
+<div class="ev"><h3>Corporativos</h3><p>A sua marca em movimento, contada com narrativa.</p></div>
+<div class="ev"><h3>Shows e festas</h3><p>A energia do palco e da pista, do jeito que foi.</p></div>
+</div>
+<div class="big">Não é só gravação. <span class="r">É memória em movimento.</span></div>
+</div></section>
+
+<section><div class="w rv">
+<h2>Como contamos <span class="r">a sua história</span></h2>
+<ol class="steps">
+<li><div class="n">1</div><h3>Conversa</h3><p>Entendemos o que torna o seu evento único.</p></li>
+<li><div class="n">2</div><h3>Captação</h3><p>Câmeras atentas a cada emoção, sem atrapalhar a festa.</p></li>
+<li><div class="n">3</div><h3>Edição</h3><p>Cada cena vira narrativa, com trilha e ritmo de cinema.</p></li>
+<li><div class="n">4</div><h3>Entrega</h3><p>Seu filme pronto para assistir e compartilhar.</p></li>
+</ol></div></section>
+
+<section id="portfolio"><div class="w rv">
+<h2>Histórias que já <span class="r">contamos</span></h2>
+<div class="grid">
+<div class="tile"><i class="p"></i><span>Casamento</span></div>
+<div class="tile"><i class="p"></i><span>15 anos</span></div>
+<div class="tile"><i class="p"></i><span>Formatura</span></div>
+<div class="tile"><i class="p"></i><span>Evento corporativo</span></div>
+<div class="tile"><i class="p"></i><span>Show</span></div>
+<div class="tile"><i class="p"></i><span>Aniversário</span></div>
+</div></div></section>
+
+<section><div class="w rv">
+<h2>Quem viveu, <span class="r">recomenda</span></h2>
+<div class="grid">
+<div class="dep"><div class="st" aria-label="5 estrelas">★★★★★</div><p>[Escreva aqui o depoimento de um cliente.]</p><small>[Nome do cliente], [tipo de evento]</small></div>
+<div class="dep"><div class="st" aria-label="5 estrelas">★★★★★</div><p>[Escreva aqui o depoimento de um cliente.]</p><small>[Nome do cliente], [tipo de evento]</small></div>
+<div class="dep"><div class="st" aria-label="5 estrelas">★★★★★</div><p>[Escreva aqui o depoimento de um cliente.]</p><small>[Nome do cliente], [tipo de evento]</small></div>
+</div></div></section>
+
+<section class="fim"><div class="w rv">
+<h2>Seu evento acontece uma vez. <span class="r">Sua história dura para sempre.</span></h2>
+<a class="btn wal" href="#">Peça seu orçamento agora</a>
+</div></section>
+</main>
+
+<footer><div class="w"><div class="logo"><span class="r">KF</span> VÍDEOMAKER</div>
+<nav><a href="#">Instagram</a><a href="#">YouTube</a><a href="mailto:kalebarthur615@gmail.com">E-mail</a><a class="wal" href="#">WhatsApp</a></nav>
+<div>Campo Grande - MS · © KF VÍDEOMAKER</div></div></footer>
+
+<a class="wa wal" href="#" aria-label="Chamar no WhatsApp"><svg width="34" height="34" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.900 1.200 2.200 1.300.3.1.5.1.6-.1l.9-1.100c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.4.1.2.1.8-.1 1.500Z"/></svg></a>
+
+<script>
+try{
+var NUM="5567992845363";
+var MSG=encodeURIComponent("Olá! Vi o site da KF VÍDEOMAKER e quero um orçamento para o meu evento.");
+document.querySelectorAll(".wal").forEach(function(a){a.href="https://wa.me/"+NUM+"?text="+MSG;a.target="_blank";a.rel="noopener"});
+var t=0,tc=document.getElementById("tc");
+setInterval(function(){t++;var p=function(n){return String(n).padStart(2,"0")};tc.textContent=p(Math.floor(t/3600))+":"+p(Math.floor(t/60)%60)+":"+p(t%60)},1000);
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+}catch(e){}
+</script>
+</body>
+</html>
